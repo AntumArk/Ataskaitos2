@@ -3,9 +3,42 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:Ataskaitos2"
              x:Class="Ataskaitos2.MainPage">
+    <Grid>
+        <Grid.ColumnDefinitions>
+          
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Width="*"/>
+            <RowDefinition Width="*"/>
+        </Grid.RowDefinitions>
 
-	<Label Text="Welcome to Xamarin.Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
+        <StackLayout Grid.Column="0" Grid.Row="0">
+        <Entry Placeholder="Kodas"          />
+            <Entry Placeholder="Aukštas"        />
+            <Entry Placeholder="Vieta"          />
+            <Entry Placeholder="Iš"                        />
+            <Entry Placeholder="Į"          />
+            <Entry Placeholder="Instaliacijos tipas"    />
+            <Entry Placeholder="Gaisro klasė"   />
+            <Entry Placeholder="Naudotos medžiagos"          />
+            <Entry Placeholder="Kvadratūra"          />
+            <Entry Placeholder="Numatoma kaina"          />
+        </StackLayout>
 
+        <Button x:Name="SendButton" 
+            Text="Išsiusti" 
+           Grid.Column="1"
+               Grid.Row="1"
+            Clicked="SendButton_Clicked"/>
+        <Button x:Name="LoginButton"
+        Text="Prisijungti" 
+            Grid.Column="1"
+               Grid.Row="0"
+              
+            Clicked="LoginButton_Clicked"/>
+
+    </Grid>
 </ContentPage>

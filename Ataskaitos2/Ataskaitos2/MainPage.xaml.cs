@@ -13,5 +13,15 @@ namespace Ataskaitos2
 		{
 			InitializeComponent();
 		}
-	}
+
+        private void LoginButton_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SendButton_Clicked(object sender, EventArgs e)
+        {
+
+        }
+    }
 }
