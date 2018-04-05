@@ -5,7 +5,9 @@
              Title="Prisijungimo langas">
     <ContentPage.Content>
         <StackLayout>
-          
+            <Entry Placeholder="El. paštas"        />
+            <Entry Placeholder="Slaptažodis"     IsPassword="True"     />
+            <Button Text="Prisijungti"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
